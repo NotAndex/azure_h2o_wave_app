@@ -1,19 +1,14 @@
-from h2o_wave import site, ui
+from h2o_wave import main, app, Q, ui
 
+#if __name__ == "__main__":
+@app('/')
+async def serve(q: Q):
+    # Modify the page
+    q.page['qux'] = ui.markdown_card(
+    box='1 1 2 2',
+    title='Hello World',
+    content='"The Internet? Is that thing still around?" - *Homer Simpson*',)
 
-def main():
-# Grab a reference to the page at route '/hello'
-    page = site['/']
+    # Save the page
+    await q.page.save()
 
-    # Add a markdown card to the page.
-    page['quote'] = ui.markdown_card(
-        box='1 1 2 2',
-        title='Hello World',
-        content='"The Internet? Is that thing still around?" - *Homer Simpson* a',
-    )
-
-    # Finally, save the page.
-    page.save()
-
-if __name__ == "__main__":
-    main()
