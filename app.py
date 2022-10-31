@@ -7,7 +7,7 @@ async def serve(q: Q):
     q.page['qux'] = ui.markdown_card(
     box='1 1 2 2',
     title='Hello World',
-    content='"The Internet? Is that thing still around?" - *Homer Simpson*',)
+    content='"The Internet? Is that thing still around?" - *Homer Simpson* test',)
 
     # Save the page
     await q.page.save()
