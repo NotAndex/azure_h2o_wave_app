@@ -1,7 +1,7 @@
 from h2o_wave import main, app, Q, ui
 
 #if __name__ == "__main__":
-@app('/')
+@app('/test')
 async def serve(q: Q):
     # Modify the page
     q.page['qux'] = ui.markdown_card(
