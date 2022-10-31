@@ -2,3 +2,4 @@ h2o-wave
 uvicorn
 uvloop
 httptools
+gunicorn
