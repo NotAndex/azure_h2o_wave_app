@@ -3,3 +3,5 @@ uvicorn
 uvloop
 httptools
 gunicorn
+opencv-python
+numpy
