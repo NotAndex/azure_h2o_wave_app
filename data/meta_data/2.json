@@ -1,0 +1,21 @@
+{
+    "event_id": 2,
+    "img1": {
+        "path": "./data/img1_data/2.png",
+        "stats": {
+            "stat_1": 0.25,
+            "stat_2": 0.05,
+            "stat_3": 0.05,
+            "stat_4": 0.05
+        }
+    },
+    "img2": {
+        "path": "./data/img2_data/2.png",
+        "stats": {
+            "stat_1": 0.05,
+            "stat_2": 0.05,
+            "stat_3": 0.05,
+            "stat_4": 0.05
+        }
+    }
+}
